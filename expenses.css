@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  background:hsl(27, 66%, 92%);
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#balance, #chart {
+  border-radius: 0.5em;
+  margin: 1em;
+  padding: 1em;
+}
+
+#balance {
+  background: hsl(10, 79%, 65%);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#balance div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#logo {
+  align-items: center;  
+  justify-content: center;
+}
+
+#logo img{
+  width: 50px;
+}
+
+#balance div span:last-of-type {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#chart {
+  background: white;
+}
+
+#chart > span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#bars {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: flex-end;
+  padding: 3em 0 1.5em 0;
+  border-bottom: 1px solid grey;
+}
+
+.day {
+  text-align: center;
+  width: 75%;
+  position: relative;
+  display: grid;
+}
+
+.day div {
+  background: hsl(10, 79%, 65%);
+  border-radius: 0.2em;
+  z-index: 1;
+  transition: all 200ms ease 50ms;
+}
+
+.day #wed {
+  background: teal;
+}
+
+.day span:first-of-type {
+  position: absolute;
+  left: 0;
+  top: -2em;
+  padding: 0.2em;
+  border-radius: 0.3em;
+  background: black;
+  color: white;
+  transition: all 200ms ease 50ms;
+  z-index: 20;
+  opacity: 0;
+}
+
+.day span:last-of-type {
+  padding-top: 0.5em;
+}
+
+.day:hover div {
+  opacity: 70%;
+}
+
+.day:hover span:first-of-type {
+  opacity: 100%;
+}
+
+#details {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#total, #change {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#change span:last-of-type {
+  margin-top: 0.5em;
+}
+
+#total span:last-of-type, #change span:first-of-type {
+  font-weight: bold;
+}
+
+#total span:last-of-type {
+  font-size: 32px;
+}
