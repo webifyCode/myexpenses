@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://5erious5am.github.io/myexpenses]
+- Live Site URL: [https://webifyCode.github.io/myexpenses]
 
 ## My process
 
@@ -46,6 +46,6 @@ Users should be able to:
 
 ## Author
 
-- Github - [5erious5am](https://www.github.com/5erious5am)
+- Github - [webifyCode](https://www.github.com/webifyCode)
 - Frontend Mentor - [@5erious5am](https://www.frontendmentor.io/profile/5erious5am)
 
